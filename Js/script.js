@@ -44,23 +44,20 @@ document.getElementById('write-text').addEventListener('keyup',function(events){
 
 })
 
-// const image = document.getElementById("myImage");
-// function changeImage() {
-//     image.src = "images/banner-images/tv.png";
-// }
-// image.addEventListener("mouseover", changeImage);
+// document.getElementById('bd-change').addEventListener('dblclick', function(event) {
+//     event.target.style.backgroundColor = 'red';
+// })
 
-// function changeImageOnMouseOut() {
-//     image.src = "images/banner-images/xbox.png";
-// }
-// image.addEventListener("mouseout", changeImage);
+let isRed = true;
 
 
-// const image1 = document.getElementById("myImage1");
-// function changeImage1() {
-//     image.src = "images/banner-images/xbox.png";
-// }
-// image.addEventListener("mouseout", changeImage1);
+const bdChange = document.getElementById('bd-change');
 
-
-
+bdChange.addEventListener('dblclick', function() {
+    if (isRed) {
+        bdChange.style.backgroundColor = 'blue'; 
+    } else {
+        bdChange.style.backgroundColor = 'red'; 
+    }
+    isRed = !isRed;
+});
