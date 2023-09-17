@@ -30,3 +30,37 @@ document.getElementById('btn3').addEventListener('click',function(){
     const remove=document.getElementById('backpack');
     remove.style.display='none';
 })
+
+
+document.getElementById('write-text').addEventListener('keyup',function(events){
+    const text=events.target.value;
+    const buttonDelete=document.getElementById('btn3');
+
+    if (text=='email'){
+        buttonDelete.removeAttribute('disabled');
+    }else{
+        buttonDelete.setAttribute('disabled',true);
+    }
+
+})
+
+// const image = document.getElementById("myImage");
+// function changeImage() {
+//     image.src = "images/banner-images/tv.png";
+// }
+// image.addEventListener("mouseover", changeImage);
+
+// function changeImageOnMouseOut() {
+//     image.src = "images/banner-images/xbox.png";
+// }
+// image.addEventListener("mouseout", changeImage);
+
+
+// const image1 = document.getElementById("myImage1");
+// function changeImage1() {
+//     image.src = "images/banner-images/xbox.png";
+// }
+// image.addEventListener("mouseout", changeImage1);
+
+
+

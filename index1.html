@@ -53,7 +53,10 @@
                 </div>
               </div>
               <div class="col-lg-5">
-                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                <img src="images/banner-images/xbox.png" class="d-block w-100" alt="..."
+                onmouseover="this.src='images/banner-images/tv.png'"
+                onmouseout="this.src='images/banner-images/xbox.png'">
+       </body>
               </div>
 
             </div>
@@ -230,9 +233,9 @@
           <h2>LET'S STAY IN TOUCH</h2>
           <p>Get updates on sales, specials and more</p>
           <div class="d-flex align-items-center justify-content-center">
-            <input type="text" class="form-control w-100 mb-1">
+            <input type="text" class="form-control w-100 mb-1" id="write-text">
           </div>
-          <button class="btn panda-btn-buy-now mt-1" id="btn3">Submit</button>
+          <button class="btn panda-btn-buy-now mt-1" disabled id="btn3">Submit</button>
         </div>
         </div>
     </section>
