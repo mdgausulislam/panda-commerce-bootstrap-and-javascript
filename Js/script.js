@@ -21,3 +21,12 @@ buttonUpdate.addEventListener('click',function(){
 document.getElementById('btn-more1').addEventListener('click',function(){
     console.log('button clicked');
 })
+document.getElementById('btn-more1').addEventListener('click',function(){
+    const cardItem=document.getElementsByClassName('card');
+    console.log(cardItem);
+    cardItem.style.display='none';
+})
+document.getElementById('btn3').addEventListener('click',function(){
+    const remove=document.getElementById('backpack');
+    remove.style.display='none';
+})
